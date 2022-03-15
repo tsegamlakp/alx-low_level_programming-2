@@ -1,24 +1,19 @@
-#include "myfile.h"
-
+#include <stdio.h>
 /**
- * main - prints out holberton char by char.
- 
- * Return: 0.
-*/
-
-
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char str[] = "Putchar";
-	int i;
+	char *sh = "_putchar";
 
-	i = 0;
-	while (str[i])
+	while (*sh)
 	{
-		_putchar(str[i]);
-		++i;
+		putchar(*sh);
+		sh++;
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
