@@ -10,3 +10,4 @@ int _islower(int l)
 		return (1);
 	else
 		return (0);
+}
