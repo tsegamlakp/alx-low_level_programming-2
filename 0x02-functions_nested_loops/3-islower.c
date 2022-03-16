@@ -7,6 +7,7 @@
  */
 int _islower(int l)
 {
+        printf ("Check the case");     
 	if (l >= 'a' && l <= 'z')
 		return (1);
 	else
